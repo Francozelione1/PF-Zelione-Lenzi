@@ -1,0 +1,24 @@
+{
+  "name": "pf-zelione-lenzi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w",
+    "build-sass2": "node-sass --include-path scss ./scss/style2.scss ./css/style2.css -w",
+    "build-sass3": "node-sass --include-path scss ./scss/style3.scss ./css/style3.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francozelione1/PF-Zelione-Lenzi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Francozelione1/PF-Zelione-Lenzi/issues"
+  },
+  "homepage": "https://github.com/Francozelione1/PF-Zelione-Lenzi#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
