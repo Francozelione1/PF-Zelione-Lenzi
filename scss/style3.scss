@@ -1,0 +1,163 @@
+@import './base/reset.scss';
+@import './base/vars';
+@import './base/extend';
+@import './components/navegador.scss';
+
+.fondo3{
+    position: relative;
+    background-image: url(../assets/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28312.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h3{
+    @include contenedoresR(flex,row,relative);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 50px;
+}
+
+.colorG{
+    color: goldenrod;
+    margin-left: 10px;
+}
+
+.cont{
+    @include contenedoresR(flex,row,relative);
+    width: 100%;
+    justify-content: center;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+.galeria{
+    width: 70%;
+    height: 80%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;    
+    grid-row-gap: 20px; 
+    grid-template-areas: 
+    'area1 area2'
+    'area1 area2'
+    'area3 area4'
+    'area5 area5'
+    'area6 area6';
+}
+
+.contenido{
+    @include contenedoresR(flex,row,relative);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.a1{
+    grid-area: area1;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}
+
+.a2{
+    grid-area: area2;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}
+
+.a3{
+    grid-area: area3;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}
+
+.a4{
+    grid-area: area4;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}
+
+.a5{
+    grid-area: area5;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}
+
+.a6{
+    grid-area: area6;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}
+
+.imagen{
+    @include contenedoresR(flex,row,relative);
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.caja{
+    @include contenedoresR(flex,row,relative);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+@import './components/footer.scss';
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px){
+
+    h3{
+        display: flex;
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: goldenrod;
+        background-size: cover;
+        color: white;
+        list-style: none;
+        padding-left: 10px;
+        font-size: 15px;
+        padding-top: 5px;
+        background-size: cover;   
+        padding-bottom: 5px;
+        gap: 5px;
+    }
+    
+    .footer li{
+        padding-right: 20px;
+    }
+    
+}
