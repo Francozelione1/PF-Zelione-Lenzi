@@ -53,7 +53,8 @@ main {
   background-image: url(../assets/f.elconfidencial.com_original_d9e_66d_793_d9e66d793adbc994841e60850a17e61c.jpg);
   background-size: cover;
   object-fit: cover;
-  position: relative; }
+  position: relative;
+  padding-bottom: 10px; }
 
 .article2 {
   display: flex;
@@ -64,30 +65,39 @@ main {
   justify-content: center;
   text-align: center;
   gap: 150px;
-  height: 800px;
+  height: 100%;
   width: 100%; }
 
 .cajiquis {
   position: relative;
   display: flex;
-  width: 22%;
+  width: 20%;
+  height: 90%;
   border-radius: 5px;
-  height: 100%;
   flex-direction: column;
   align-items: center;
-  transition: 1s; }
+  transition: 1s all; }
 
 .cajiquis:hover {
   transform: scale(1.1, 1.1); }
 
 .bronce {
-  border: solid 5px #633603; }
+  border: solid 5px #633603;
+  transition: 1s all; }
+  .bronce:hover {
+    box-shadow: 0 0 30px 5px chocolate; }
 
 .plata {
-  border: solid 5px silver; }
+  border: solid 5px silver;
+  transition: 1s all; }
+  .plata:hover {
+    box-shadow: 0 0 30px 5px silver; }
 
 .oro {
-  border: solid 5px goldenrod; }
+  border: solid 5px goldenrod;
+  transition: 1s all; }
+  .oro:hover {
+    box-shadow: 0 0 30px 5px goldenrod; }
 
 .cajiquis img {
   position: relative;
@@ -96,14 +106,31 @@ main {
   height: 50%; }
 
 .InfoCajas {
+  position: relative;
   display: flex;
-  background-color: #360d2a;
+  background-color: black;
   font-size: 20px;
-  flex-direction: column;
   height: 50%;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%; }
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center; }
+  .InfoCajas p {
+    display: flex;
+    position: relative;
+    margin-bottom: 0;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold; }
+  .InfoCajas .contB {
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 20%;
+    justify-content: flex-end;
+    align-items: center; }
 
 .VerMas {
   display: flex;
@@ -111,16 +138,15 @@ main {
   position: relative;
   align-self: flex-end;
   height: 50px;
-  padding: 15px;
   width: 120px;
+  align-items: center;
   justify-content: center;
-  margin-right: 20px;
-  border: solid 5px black;
+  margin: 10px;
+  border: solid 3px white;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-bottom: 10px; }
+  font-family: 'Courier New', Courier, monospace; }
 
 .bronce1 {
   background-color: #633603; }
@@ -138,7 +164,12 @@ main {
   background-image: url(../assets/Seguridad_Informatica.webp);
   background-size: cover;
   margin-top: 100px;
-  object-fit: cover; }
+  object-fit: cover;
+  padding-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold; }
+  .seguridad p {
+    text-align: center; }
 
 .seguridad-info {
   display: flex;
@@ -152,6 +183,13 @@ h4 {
   color: white;
   font-weight: bold; }
 
+.listas {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 20px; }
+
 .logos {
   display: flex;
   flex-direction: column;
@@ -162,28 +200,35 @@ h4 {
   width: 100%;
   height: 95%;
   border-radius: 5px;
-  transition: 1s; }
+  transition: 0.5s all; }
 
 .imagensiqui:hover {
-  border: solid 10px black; }
+  content: url(../assets/Soundalarmimg.jpg);
+  object-fit: cover; }
+
+.imagensiqui2 {
+  width: 100%;
+  height: 95%;
+  border-radius: 5px; }
 
 .seguridad-form-cont {
   position: relative;
-  width: 50%;
-  align-items: center;
-  justify-content: center; }
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
 
 .seguridad-form {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
 
 .enterateForm {
   position: relative;
-  background-color: black;
   display: flex;
+  background-color: black;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -192,15 +237,14 @@ h4 {
   font-size: 20px;
   color: white;
   width: 50%;
-  height: 100%;
   padding: 10px;
   gap: 5px;
   font-weight: bolder;
-  margin-top: 40%;
-  transition: 0,6s; }
+  transition: 1s all;
+  border: solid 3px white; }
 
 .enterateForm:hover {
-  border: solid 3px goldenrod; }
+  box-shadow: 0 0 30px 10px white; }
 
 .botones {
   display: flex;
@@ -229,18 +273,83 @@ h4 {
   font-size: 15px;
   border-radius: 5px; }
 
-.footer {
+.seguridad-p2 {
+  position: relative;
+  display: flex;
+  height: 70%;
+  width: 100%;
+  gap: 50px;
+  justify-content: center;
+  align-items: center; }
+
+.cajaOpinion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: solid 5px wheat;
+  border-radius: 5px;
+  height: 90%; }
+  .cajaOpinion img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    object-fit: cover; }
+  .cajaOpinion p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 50%;
+    margin-bottom: 0;
+    padding: 0 10px; }
+
+.mejores {
+  position: relative;
+  font-size: 30px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 20px 0; }
+
+footer {
   position: relative;
   display: flex;
   background-color: goldenrod;
-  padding-top: 15px;
-  color: white;
-  height: 50px;
-  list-style: none;
-  font-size: 20px;
-  padding-left: 30px; }
-  .footer li {
-    padding-right: 50px; }
+  background-size: cover;
+  gap: 50px;
+  justify-content: center; }
+  footer div {
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    justify-content: center; }
+  footer div img {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: 0.5s all;
+    opacity: 0.5; }
+    footer div img:hover {
+      transform: scale(1.1, 1.1);
+      box-shadow: 0 0 5px 3px white;
+      opacity: 1; }
+  footer p {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 0;
+    align-items: center; }
 
 @media only screen and (max-width: 480px) {
   h3 {
@@ -260,26 +369,11 @@ h4 {
     margin-right: 150px; }
   .article1 p {
     margin-top: 20px;
-    font-size: 15px; }
-  .cajiquis {
-    position: relative;
-    height: 33%;
-    width: 80%;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .InfoCajas {
-    display: flex;
-    background-color: #360d2a;
-    font-size: 20px;
-    flex-direction: column;
-    height: 50%;
-    justify-content: space-around;
-    align-items: center; }
+    font-size: 15px;
+    margin: 0 10px; }
   .article2 {
     position: relative;
-    margin-top: 100px;
+    margin-top: 70px;
     color: white;
     justify-content: center;
     display: flex;
@@ -289,6 +383,41 @@ h4 {
     gap: 150px;
     width: 100%;
     height: auto; }
+  .cajiquis {
+    position: relative;
+    height: 33%;
+    width: 70%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .InfoCajas {
+    position: relative;
+    display: flex;
+    background-color: black;
+    font-size: 20px;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center; }
+    .InfoCajas p {
+      display: flex;
+      position: relative;
+      margin-bottom: 0;
+      margin: 20px 0;
+      align-items: center;
+      height: 70%;
+      width: 90%;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold; }
+    .InfoCajas .contB {
+      position: relative;
+      display: flex;
+      width: 90%;
+      height: 20%;
+      justify-content: flex-end;
+      align-items: center; }
   .seguridad {
     position: relative;
     background-image: url(../assets/Seguridad_Informatica.webp);
@@ -307,7 +436,17 @@ h4 {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    margin-top: 50px; }
+    margin-top: 20px; }
+    .seguridad-info div p {
+      font-size: 15px;
+      padding: 0 20px; }
+  .listas {
+    position: relative;
+    display: flex;
+    width: 95%;
+    margin-bottom: 20px;
+    gap: 5px;
+    font-size: 15px; }
   .seguridad-form-cont {
     position: relative;
     width: 100%;
@@ -340,22 +479,82 @@ h4 {
     margin-top: 0;
     transition: 0,6s;
     margin-bottom: 20%; }
-  .footer {
+  .seguridad-p2 {
     position: relative;
     display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px; }
+  .cajaOpinion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: solid 5px wheat;
+    border-radius: 5px; }
+    .cajaOpinion img {
+      position: relative;
+      width: 100%;
+      height: 50%;
+      object-fit: cover; }
+    .cajaOpinion p {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: black;
+      color: white;
+      font-size: 15px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      height: 50%;
+      margin-bottom: 0;
+      padding: 50px 10px; }
+  .mejores {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px 20px; }
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: goldenrod;
     background-size: cover;
-    padding-top: 10px;
-    color: white;
-    list-style: none;
-    padding-left: 10px;
-    font-size: 15px;
-    gap: 5px;
-    flex-direction: column;
-    height: auto;
-    padding-bottom: 10px; }
-  .footer li {
-    padding-right: 20px; }
+    justify-content: center;
+    gap: 0; }
+    footer div {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 20%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      gap: 10px;
+      justify-content: center; }
+    footer div img {
+      position: relative;
+      display: flex;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      transition: 0.5s all;
+      opacity: 0.5; }
+      footer div img:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 3px white;
+        opacity: 1; }
+    footer p {
+      position: relative;
+      display: flex;
+      font-size: 15px;
+      color: white;
+      margin-bottom: 0;
+      align-items: center; }
   dl, ol, ul {
     margin-top: 0;
     margin-bottom: 0; } }
