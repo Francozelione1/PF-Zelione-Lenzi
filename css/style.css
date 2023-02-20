@@ -190,6 +190,69 @@ h4 {
   margin-bottom: 20px;
   gap: 20px; }
 
+.cont {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  justify-content: center; }
+
+.galeria {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas: 'area1 area2' 'area3 area4'; }
+
+.contenido {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.a1 {
+  grid-area: area1; }
+  .a1 img {
+    border-radius: 5px; }
+  .a1:hover {
+    content: url(../assets/Soundalarmimg.jpg); }
+
+.a2 {
+  grid-area: area2; }
+  .a2 img {
+    border-radius: 5px; }
+  .a2:hover {
+    content: url(../assets/Soundalarmimg.jpg); }
+
+.a3 {
+  grid-area: area3; }
+  .a3 img {
+    border-radius: 5px; }
+  .a3:hover {
+    content: url(../assets/Soundalarmimg.jpg); }
+
+.a4 {
+  grid-area: area4; }
+  .a4 img {
+    border-radius: 5px; }
+
+.imagen {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
+
 .logos {
   display: flex;
   flex-direction: column;
