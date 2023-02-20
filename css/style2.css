@@ -506,7 +506,8 @@ dl, ol, ul {
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 50px;
-    padding-bottom: 10%; }
+    padding-bottom: 10%;
+    margin-top: 100px; }
   .formulario div {
     padding-top: 30px; }
   .formulario div ::placeholder {
@@ -524,7 +525,7 @@ dl, ol, ul {
     color: black;
     background-color: gainsboro;
     border-radius: 5px;
-    width: 50%; }
+    width: 70%; }
   .mapa {
     display: flex;
     flex-direction: column;
@@ -536,7 +537,7 @@ dl, ol, ul {
     width: 100%;
     gap: 50px;
     align-items: center;
-    margin-top: 1200px; }
+    margin-top: 1400px; }
   .tabla {
     display: flex;
     position: relative;
