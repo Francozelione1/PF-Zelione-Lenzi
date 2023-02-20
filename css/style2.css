@@ -29,14 +29,91 @@
 
 .fondo2 {
   position: relative;
-  background-image: url(../assets/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28312.webp);
+  background-color: black;
   background-size: cover;
   object-fit: cover;
-  padding-top: 100px;
+  padding-top: 35px;
   padding-bottom: 100px; }
 
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/banner2.jpg);
+  background-size: cover;
+  height: auto;
+  padding-top: 100px;
+  align-items: center;
+  padding-bottom: 100px;
+  gap: 80px; }
+
+.titulo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  text-align: center;
+  gap: 15px; }
+
+.sound {
+  position: relative;
+  display: flex;
+  background-color: goldenrod;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+  border-radius: 3px; }
+  .sound p {
+    margin-bottom: 0;
+    font-weight: bold; }
+  .sound img {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px; }
+
+.contenedorBan {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center; }
+
+.contenedorBan-c {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: cyan;
+  border-radius: 3px;
+  border: solid 5px black;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 20%;
+  transition: 1s all; }
+  .contenedorBan-c:hover {
+    box-shadow: 0 0 30px 5px white; }
+  .contenedorBan-c img {
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px; }
+  .contenedorBan-c p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; }
+
 .contenedor-bg {
-  margin-top: 45px;
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -50,7 +127,7 @@
   position: relative;
   font-size: 20px;
   color: white;
-  width: 50%;
+  width: 60%;
   gap: 20px;
   font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
@@ -58,13 +135,50 @@
   text-align: center;
   align-items: center; }
 
+.p2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 100px; }
+
+.icono {
+  position: relative;
+  width: 100%; }
+  .icono img {
+    border-radius: 5px; }
+
+.wpp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #609b07;
+  width: 50%;
+  height: 100px;
+  border-radius: 5px;
+  padding: 0 5%;
+  transition: all 1s; }
+  .wpp:hover {
+    box-shadow: 0 0 30px 5px white; }
+  .wpp p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0; }
+  .wpp img {
+    position: relative;
+    height: 50px;
+    width: 50px; }
+
 .parte2 {
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 50%;
+  width: 40%;
   height: 100%;
-  align-items: center;
   justify-content: center; }
 
 .formulario {
@@ -103,18 +217,13 @@
   border-radius: 5px;
   width: 50%; }
 
-.mapa {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; }
-
 .caja {
   display: flex;
   flex-direction: row;
   position: relative;
   width: 100%;
-  gap: 50px;
-  margin-top: 200px; }
+  gap: 20px;
+  margin-top: 100px; }
 
 .tabla {
   display: flex;
@@ -122,9 +231,9 @@
   position: relative;
   font-size: 20px;
   color: black;
+  justify-content: center;
   background-color: gainsboro;
   border: solid 5px goldenrod;
-  padding: 0 5% 0 5%;
   margin-left: 5%;
   border-radius: 10px;
   width: 50%;
@@ -140,9 +249,11 @@ table {
   padding-right: 50px; }
 
 .division {
-  display: flex;
-  flex-direction: row;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%; }
 
 .listas {
@@ -152,18 +263,21 @@ table {
   width: 50%; }
 
 .lista {
-  display: flex;
-  flex-direction: row;
   position: relative;
+  display: flex;
   font-size: 30px;
   flex-direction: column;
-  font-weight: bold; }
+  font-weight: bold;
+  width: 70%; }
+
+.ContratarC {
+  position: relative;
+  display: flex;
+  gap: 20px; }
 
 .botones {
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
+  justify-content: center;
   align-items: center;
   gap: 20%; }
 
@@ -171,12 +285,14 @@ table {
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 50%;
   justify-content: center;
   padding: 10px;
   margin-top: 10%;
-  border: cyan 5px solid;
-  border-radius: 5px; }
+  border: cyan 3px solid;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px; }
 
 .fbronce {
   background-color: #643005; }
@@ -196,22 +312,41 @@ table {
 .oro {
   color: goldenrod; }
 
-.footer {
+footer {
   position: relative;
   display: flex;
   background-color: goldenrod;
-  padding-top: 15px;
-  color: white;
-  height: 50px;
-  list-style: none;
-  font-size: 20px;
-  padding-left: 30px; }
-  .footer li {
-    padding-right: 50px; }
-
-.CasillerosF {
-  width: 235px;
-  height: 35px; }
+  background-size: cover;
+  gap: 50px;
+  justify-content: center; }
+  footer div {
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    justify-content: center; }
+  footer div img {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: 0.5s all;
+    opacity: 0.5; }
+    footer div img:hover {
+      transform: scale(1.1, 1.1);
+      box-shadow: 0 0 5px 3px white;
+      opacity: 1; }
+  footer p {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 0;
+    align-items: center; }
 
 dl, ol, ul {
   margin-top: 0;
@@ -223,38 +358,143 @@ dl, ol, ul {
     background-image: url(../assets/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28312.webp);
     background-size: cover;
     object-fit: cover;
-    padding-top: 100px;
     padding-bottom: 100px; }
-  .contenedor-bg {
-    margin-top: 45px;
+  .banner {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    background-image: url(../assets/banner2.jpg);
+    background-size: cover;
     height: auto;
-    gap: 40px;
-    align-items: center; }
+    padding-top: 50px;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 60px;
+    padding: 50px 10px; }
+  .titulo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    text-align: center;
+    gap: 15px; }
+  .sound {
+    position: relative;
+    display: flex;
+    background-color: goldenrod;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+    border-radius: 3px; }
+    .sound p {
+      margin-bottom: 0;
+      font-weight: bold; }
+    .sound img {
+      position: relative;
+      display: flex;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px; }
+  .contenedorBan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: center; }
+  .contenedorBan-c {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: cyan;
+    border-radius: 3px;
+    border: solid 5px black;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 60%; }
+    .contenedorBan-c img {
+      position: relative;
+      display: flex;
+      width: 80px;
+      height: 80px; }
+    .contenedorBan-c p {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center; }
+  .contenedor-bg {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px; }
   .info {
     display: flex;
     flex-direction: column;
     position: relative;
     font-size: 20px;
     color: white;
-    width: 100%;
-    height: 50%;
+    width: 60%;
     gap: 20px;
-    font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-align: center;
     align-items: center; }
+  .p2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 150px; }
+  .icono {
+    position: relative;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center; }
+    .icono img {
+      border-radius: 5px; }
+  .wpp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #609b07;
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
+    padding: 0 5%; }
+    .wpp p {
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 0; }
+    .wpp img {
+      position: relative;
+      height: 50px;
+      width: 50px; }
   .parte2 {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 150px; }
   .formulario {
     position: relative;
     color: black;
@@ -296,7 +536,7 @@ dl, ol, ul {
     width: 100%;
     gap: 50px;
     align-items: center;
-    margin-top: 100px; }
+    margin-top: 1200px; }
   .tabla {
     display: flex;
     position: relative;
@@ -325,13 +565,14 @@ dl, ol, ul {
   .division {
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 90%;
     gap: 10%; }
   .listas {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%; }
+    width: 90%; }
   .lista {
     display: flex;
     position: relative;
@@ -341,13 +582,10 @@ dl, ol, ul {
   .botones {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 650px;
     align-items: center;
-    gap: 50%; }
+    gap: 0; }
   .contratar {
     display: flex;
-    width: 50%;
     justify-content: center;
     padding-right: 30px;
     padding-left: 30px;
@@ -355,18 +593,48 @@ dl, ol, ul {
     border: cyan 5px solid;
     border-radius: 5px;
     font-weight: bold; }
-  .footer {
+  .ContratarC {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: goldenrod;
-    color: white;
     background-size: cover;
-    list-style: none;
-    padding-left: 10px;
-    font-size: 15px;
-    padding-bottom: 10px; }
-  .footer li {
-    padding-right: 20px; }
+    justify-content: center;
+    gap: 0; }
+    footer div {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 20%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      gap: 10px;
+      justify-content: center; }
+    footer div img {
+      position: relative;
+      display: flex;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      transition: 0.5s all;
+      opacity: 0.5; }
+      footer div img:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 3px white;
+        opacity: 1; }
+    footer p {
+      position: relative;
+      display: flex;
+      font-size: 15px;
+      color: white;
+      margin-bottom: 0;
+      align-items: center; }
   dl, ol, ul {
     margin-top: 0;
     margin-bottom: 0; } }
